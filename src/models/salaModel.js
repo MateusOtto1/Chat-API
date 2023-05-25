@@ -1,35 +1,30 @@
 const db = require("./db");
-function listarSalas(){
-    return db.findAll("salas");
+
+let listarSalas = async ()=>{
+    let salas = await db.findAll("salas");
+    return salas;
+};
+
+let buscarSala = async(idsala)=>{
+    return db.findOne("salas",idsala);
 }
 
-module.exports = {listarSalas}
-
-function listarSalas(){
-    return[
-        {
-            "_id":{
-                "$oid":"unj4u834879rfui8h34uh7"
-            },
-            "nome":"Guerreiros da InfoCimol",
-            "tipo":"publica"
-        },
-
-        {
-            "_id":{
-                "$oid":"nj54ij458j54unjgerij"
-            },
-            "nome":"Só os confirmados da INFO",
-            "tipo":"privada",
-            "chave":"47fyyg6r"
-        },
-
-        {
-            "_id":{
-                "$oid":"32km3r2oikr3290kfroimf4"
-            },
-            "nome":"Vingadores da Info",
-            "tipo":"publica"
-        }
-    ];
+let atualizarMensagens = async (sala) =>{
+    return await db.updateOne("salas", sala, {_id:sala._id});
 }
+
+let buscarMensagens = async (idsala, timestamp)=>{
+    let sala = await buscarSala(idsala);
+    if(sala.msgs){
+        let msgs = [];
+        sala.msgs.forEach((msg)=>{
+            if(msg.timestamp >= timestamp){
+                msgs.push(msg);
+            }
+        });
+        return msgs;
+    }
+    return[];
+}
+
+module.exports = {listarSalas, buscarSala, atualizarMensagens, buscarMensagens}
