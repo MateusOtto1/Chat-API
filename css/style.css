@@ -16,8 +16,8 @@ body{
 }
 
 .login{
-    width: 70%;
-    height: 85%;
+    width: 85%;
+    height: 90%;
     background: linear-gradient(#329DFF,#000000);
     border-radius: 15px;
     border: 3px solid #000000;
@@ -37,11 +37,9 @@ body{
 
 input::placeholder{
     color: black;
-    
 }
 
-button{
-    margin-top: 15vh;
+.btn{
     width: 200px;
     height: 9vh;
     font-size: 1.7rem;
@@ -49,6 +47,10 @@ button{
     border: 2px solid #000000;
 }
 
-@media (min-width: 400px){
-    
+.salas{
+    width: 85%;
+    height: 90%;
+    background: linear-gradient(#329DFF,#000000);
+    border-radius: 15px;
+    border: 3px solid #000000;
 }
