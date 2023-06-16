@@ -5,7 +5,7 @@
 }
 
 body{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-image: url(../imagens/imagemFundo.png);
     background-repeat: no-repeat;
@@ -59,7 +59,16 @@ input::placeholder{
     border: 3px solid #000000;
 }
 
+.logo{
+    margin-top: 3.5vh;
+}
+
+.chatGo{
+    margin-top: 4.5vh;
+}
+
 .criar{
+    margin-top: 4vh;
     background: linear-gradient(#0085FF, #5ACEFF);
     width: 150px;
     height: 6vh;
@@ -68,9 +77,18 @@ input::placeholder{
     border: 2px solid #000000;
 }
 
+.fundoSalas{
+    width: 85%;
+    height: 90%;
+    background: linear-gradient(#329DFF,#000000);
+    border-radius: 15px;
+    border: 3px solid #000000;
+}
+
 .nomeSalas{
+    margin-top:2.5vh;
     width:95%;
-    height: 75px;
+    height: 8vh;
     background-color: white;
     margin-left: 1.8vw;
     border-radius: 15px;
@@ -97,6 +115,18 @@ a{
     margin-top: 1.7vh;
 }
 
+.seta{
+    margin-top: 4vh;
+}
+
+.fundoChat{
+    width: 85%;
+    height: 90%;
+    background: linear-gradient(#329DFF,#000000);
+    border-radius: 15px;
+    border: 3px solid #000000;
+}
+
 .fundoPequeno{
     margin-top: 3.5vh;
     margin-left: 12.2vw;
@@ -105,6 +135,10 @@ a{
     background: linear-gradient(#0094FF,#000a13);
     border-radius: 15px;
     border: 3px solid #000000;
+}
+
+.espaco{
+    margin-top: 3vh;
 }
 
 .chat{
@@ -118,6 +152,7 @@ a{
 }
 
 .sair{
+    margin-top: 4vh;
     background: linear-gradient(#0085FF, #5ACEFF);
     width: 150px;
     height: 6vh;
@@ -126,13 +161,19 @@ a{
     border: 2px solid #000000;
 }
 
+.msg{
+    margin-top: 2vh;
+    margin-left: 1.2vw;
+    width: 100%;
+}
+
 h5{
     text-align: start;
     color:white;
 }
 
 .divInputChat{
-    margin-top: 15%;
+    margin-top: 22.6vh;
 }
 
 .inputEnvio{
@@ -161,11 +202,128 @@ h5{
 }
 
 .divCheck{
-    margin-left: 45%;
+    margin-left: 100%;
+    width: 100%;
     font-size: 1.4rem;
 }
 
 .check{
     width: 25px;
     height: 25px;
+}
+
+.senha{
+    margin-top: 3vh;
+    display:none;
+}
+
+.inputSenha{
+    width: 75%;
+    height: 8vh;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    padding-left: 20px;
+    display:none;
+}
+
+.salvar{
+    margin-top: 5vh;
+}
+
+@media (max-width:500px){
+    body{
+        width: 100vw;
+        min-height: 100vh;
+    }
+    .fundoSalas{
+        width: 95%;
+        height:95%;
+    }
+
+    .logo{
+        margin-top: 1vh;
+    }
+    
+    .chatGo{
+        margin-top: 1vh;
+    }
+    
+    .criar{
+        margin-top: 1vh;
+    }
+
+    .salas{
+        margin-left: 6.8vw;
+        width: 85%;
+        height: 72%;
+    }
+
+    .cadeado{
+        margin-top: 2vh;
+        width: 25px;
+    }
+
+    h3{
+        font-size: 13pt;
+    }
+
+    .h3Nomes{
+        text-align: left;
+        margin-left: 2vw;
+        margin-top: 2.5vh;
+    }
+
+    .seta{
+        margin-top: 1vh;
+        display: flex;
+    }
+
+    .sair{
+        margin-top: 1vh;
+    }
+
+    .fundoPequeno{
+        margin-top: 1vh;
+        margin-left: 6.2vw;
+        width: 85%;
+        height: 70%;
+    }
+
+    .fundoChat{
+        width: 95%;
+        height: 95%;
+    }
+
+    .chat{
+        margin-left: 2.3vw;
+        width: 95%;
+        height: 72%;
+    }
+
+    h5{
+        font-size: 14pt;
+    }
+
+    .msg{
+        margin-left: 2.5vw;
+    }
+
+    .divInputChat{
+        margin-top: 47%;
+    }
+
+    .divCheck{
+        margin-left: 15%;
+        width: 50%;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .senha{
+        margin-top: 0;
+    }
+
+    .salvar{
+        margin-top: 3vh;
+    }
 }
