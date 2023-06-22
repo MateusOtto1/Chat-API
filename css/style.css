@@ -50,10 +50,10 @@ input::placeholder{
 }
 
 .salas{
-    margin-top: 3.5vh;
-    margin-left: 6.2vw;
-    width: 85%;
-    height: 80%;
+    margin-top: 3vh;
+    margin-left: 7vw;
+    width: 70vw;
+    height: 67vh;
     background: linear-gradient(#000000,#0094FF);
     border-radius: 15px;
     border: 3px solid #000000;
@@ -113,6 +113,7 @@ a{
 
 .cadeado{
     margin-top: 1.7vh;
+    height: 4.5vh;
 }
 
 .seta{
@@ -128,10 +129,10 @@ a{
 }
 
 .fundoPequeno{
-    margin-top: 3.5vh;
-    margin-left: 12.2vw;
-    width: 70%;
-    height: 80%;
+    margin-top: 3vh;
+    margin-left: 7vw;
+    width: 70vw;
+    height: 65vh;
     background: linear-gradient(#0094FF,#000a13);
     border-radius: 15px;
     border: 3px solid #000000;
@@ -142,10 +143,10 @@ a{
 }
 
 .chat{
-    margin-top: 3.5vh;
-    margin-left: 6.2vw;
-    width: 85%;
-    height: 80%;
+    margin-top: 3vh;
+    margin-left: 7vw;
+    width: 70vw;
+    height: 50vh;
     background: linear-gradient(#000000,#004679);
     border-radius: 15px;
     border: 3px solid #000000;
@@ -159,6 +160,7 @@ a{
     font-size: 1.7rem;
     border-radius: 50px;
     border: 2px solid #000000;
+    text-align: center;
 }
 
 .msg{
@@ -170,10 +172,13 @@ a{
 h5{
     text-align: start;
     color:white;
+    font-size: 13pt;
 }
 
 .divInputChat{
-    margin-top: 22.6vh;
+    margin-left: 7vw;
+    justify-self: end;
+    width: 70vw;
 }
 
 .inputEnvio{
